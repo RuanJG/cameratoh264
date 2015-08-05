@@ -13,7 +13,7 @@ void capture_encode_thread(void) {
 	int count = 1;
 	for (;;) {
 		printf("\n\n-->this is the %dth frame\n", count);
-		if (count++ >= 100) // 采集100帧的数据
+		if (count++ >= 10) // 采集100帧的数据
 				{
 			printf("------need to exit from thread------- \n");
 			break;

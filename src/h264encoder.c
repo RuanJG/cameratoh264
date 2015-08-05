@@ -27,7 +27,7 @@ int compress_begin(Encoder *en, int width, int height) {
 	//en->param->rc.i_bitrate = 1024 * 10;//rate 为10 kbps
 	en->param->i_fps_num = 5; //帧率分子
 	en->param->i_fps_den = 1; //帧率分母
-	en->param->i_csp = X264_CSP_I422;
+	en->param->i_csp = X264_CSP_I420;
 
 
 	if ( 0 > x264_param_apply_profile(en->param, x264_profile_names[0]) ){ //使用baseline
